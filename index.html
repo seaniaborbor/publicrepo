@@ -147,13 +147,10 @@
 
     <div class="file-list">
       <div class="file-item">
-        <span class="file-name">📄 banner.pdf</span>
-        <a href="banner.pdf" download="banner.pdf" class="single-dl">Download</a>
+        <span class="file-name">📄 sticker.pdf</span>
+        <a href="sticker.pdf" download="sticker.pdf" class="single-dl">Download</a>
       </div>
-      <div class="file-item">
-        <span class="file-name">📄 board.pdf</span>
-        <a href="board.pdf" download="board.pdf" class="single-dl">Download</a>
-      </div>
+      
     </div>
 
     <button class="btn-primary" onclick="downloadAll()">
@@ -178,7 +175,7 @@
 
     function downloadAll() {
       // 100ms delay ensures browsers trigger both downloads without blocking
-      downloadFile('banner.pdf', 'banner.pdf');
+      downloadFile('sticker.pdf', 'sticker.pdf');
       setTimeout(() => {
         downloadFile('board.pdf', 'board.pdf');
       }, 100);
